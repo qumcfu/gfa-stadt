@@ -1,0 +1,15 @@
+{
+    "##LANGUAGE##": "English",
+    "##DEFAULT_PLACEHOLDER##": "Please enter your answer.",
+    "##QM-OPEN##": "“",
+    "##QM-CLOSE##": "”",
+    ":quote": "“:quote”",
+
+    "Reply[noun]": "Reply",
+    "Reply[verb]": "Reply",
+    "Potential for improvement[hy]": "Po&shy;ten&shy;tial for im&shy;prove&shy;ment",
+
+    "on :date": "on :date",
+    "at :time": "at :time",
+    "last changed": "last changed"
+}

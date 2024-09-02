@@ -1,0 +1,667 @@
+:root {
+    --bs-font-sans-serif: "Montserrat", sans-serif;
+}
+
+button > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button > a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+button:disabled {
+    cursor: not-allowed;
+}
+
+/* Modal windows */
+.modal-header {
+    background-color: var(--bs-body-bg);
+}
+
+.modal-footer {
+    background-color: var(--bs-body-bg);
+}
+
+/* Appearance of links */
+a {
+    text-decoration: none;
+}
+
+/* Smaller text */
+.text-small {
+    font-size: 0.8em;
+}
+
+/* Clickable progress bars */
+.progress-button:hover {
+    cursor: pointer;
+}
+
+.progress.progress-light-bg {
+    background-color: var(--bs-light) !important;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+/* Custom background colors */
+.bg-mostly-positive {
+    --bs-bg-opacity: 1;
+    background-color: rgba(154, 205, 50, var(--bs-bg-opacity)) !important;
+}
+
+.bg-mostly-negative {
+    --bs-bg-opacity: 1;
+    background-color: rgba(253, 126, 20, var(--bs-bg-opacity)) !important;
+}
+
+/* Crossed out table cells */
+table td.crossed
+{
+    background-image: linear-gradient(to bottom right,  transparent calc(50% - 1px), lightgrey, transparent calc(50% + 1px));
+}
+
+/* White background of range sliders */
+.form-range::-webkit-slider-runnable-track {
+    background-color: #ffffff; /* light color: #f8f9fa */
+}
+
+/* Inverse drop shadow for the navigation footer */
+.shadow-up-sm {
+    box-shadow: 0 -0.125rem 0.25rem rgba(0, 0, 0, 0.075) !important;
+}
+
+.round-icon {
+    border: none;
+    padding: 4px 0px 1px 4px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+
+/* round icon buttons */
+.round-icon-button {
+    border: none;
+    padding: 7px 13.2px 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: transform .25s;
+}
+
+.round-icon-button:hover {
+    transform: scale(1.125);
+}
+
+.auto-hover:hover {
+    filter: brightness(1.05) saturate(1.125) !important;
+}
+
+/* text that behaves like a button */
+.text-button, .text-button-light, .text-button-dark, .text-button-success, .text-button-danger {
+    cursor: pointer;
+}
+
+.text-button-no-hover {
+    cursor: pointer;
+}
+
+.text-button:hover {
+    color: var(--bs-primary) !important;
+}
+
+.text-button-light:hover {
+    color: #e8e8e8 !important;
+}
+
+.text-button-dark:hover {
+    color: #585858 !important;
+}
+
+.text-button-success:hover {
+    /* replace with bs 5.3 success color */
+    color: #157347 !important;
+}
+
+.text-button-danger:hover {
+    /* replace with bs 5.3 danger color */
+    color: #bb2d3b !important;
+}
+
+.br-round-top {
+    border-top-left-radius: 0.5em; border-top-right-radius: 0.5em;
+}
+
+.br-round-bottom {
+    border-bottom-left-radius: 0.5em; border-bottom-right-radius: 0.5em;
+}
+
+.vl {
+    border-left: 1px solid dimgray;
+    height: 90%;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+}
+
+@media print {
+    .hide-when-printing {
+        display: none !important;
+    }
+
+    canvas.chart-canvas {
+        max-width: 100%;
+        height: auto !important;
+        width: auto !important;
+    }
+
+    .container {
+        display: inline;
+    }
+
+    .color-heading, .color-frame {
+        print-color-adjust: exact !important;
+        -webkit-print-color-adjust: exact !important;
+    }
+
+    .relevant-item {
+        background-image: none !important;
+    }
+}
+
+/*
+ * bootstrap dashboard.css
+ */
+
+body {
+  /* font-size: .875rem; */
+}
+
+.feather {
+  width: 16px;
+  height: 16px;
+  vertical-align: text-bottom;
+}
+
+/*
+ * Sidebar
+ */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 100; /* Behind the navbar */
+    padding: 0;
+    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+
+.sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 48px; /* Height of navbar */
+    height: calc(100vh - 48px);
+    padding-top: .5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+}
+
+.sidebar .nav-link {
+    font-weight: 500;
+    color: #333;
+}
+
+.sidebar .nav-link .feather {
+    margin-right: 4px;
+    color: #999;
+}
+
+.sidebar .nav-link.active {
+    color: #007bff;
+}
+
+.sidebar .nav-link:hover .feather,
+.sidebar .nav-link.active .feather {
+    color: inherit;
+}
+
+.sidebar-heading {
+    font-size: .75rem;
+    text-transform: uppercase;
+}
+
+/*
+ * Navbar
+ */
+
+.navbar-brand {
+/*    padding-top: .75rem; */
+/*    padding-bottom: .75rem; */
+/*    font-size: 1rem; */
+/*    background-color: rgba(0, 0, 0, .25);             */
+/*    box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);    */
+}
+
+.navbar .form-control {
+/*    padding: .75rem 1rem; */
+/*    border-width: 0; */
+/*    border-radius: 0; */
+}
+
+.form-control-dark {
+    color: #fff;
+    background-color: rgba(255, 255, 255, .1);
+    border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+    border-color: transparent;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/* Dashboard 2022-09-02 */
+
+.section-card:hover {
+    background-color: #f8f8f8;
+}
+
+.box-shadow-gfa {
+    box-shadow: 2px 2px 5px gray;
+}
+
+/* Select icon and color modal windows 2023-03-18 */
+
+.selected-color {
+    background-color: black;
+}
+
+/* Icon Buttons 2022-04-29 */
+
+.btn-icon-primary, .btn-icon-secondary, .btn-icon-success,
+.btn-icon-info, .btn-icon-warning, .btn-icon-danger, .btn-icon-dark, .btn-icon-light {
+    transition: transform .125s;
+}
+
+.btn-icon-primary:hover, .btn-icon-secondary:hover, .btn-icon-success:hover,
+.btn-icon-info:hover, .btn-icon-warning:hover, .btn-icon-danger:hover, .btn-icon-dark:hover, .btn-icon-light:hover {
+    transform: scale(1.5);
+}
+
+/* zoom in and rotate  2024-02-16 */
+.btn-icon-rotate.btn-icon-primary:hover, .btn-icon-rotate.btn-icon-secondary:hover, .btn-icon-rotate.btn-icon-success:hover,
+.btn-icon-rotate.btn-icon-info:hover, .btn-icon-rotate.btn-icon-warning:hover, .btn-icon-rotate.btn-icon-danger:hover,
+.btn-icon-rotate.btn-icon-dark:hover,  .btn-icon-rotate.btn-icon-light:hover {
+    transform: scale(1.25) rotate(22.5deg);
+}
+
+.btn-icon-rotate {
+    transition: transform .25s ease-in-out;
+}
+.btn-icon-rotate:hover {
+    transform: rotate(22.5deg);
+}
+
+.btn-icon-primary:hover i {
+    color: #0b5ed7 !important;
+}
+
+.btn-icon-secondary:hover i {
+    color: #5c636a !important;
+}
+
+.btn-icon-success:hover i {
+    color: #157347 !important;
+}
+
+.btn-icon-info:hover i {
+    color: #0dcaf0 !important;
+}
+
+.btn-icon-warning:hover i {
+    color: #ffca2c !important;
+}
+
+.btn-icon-danger:hover i {
+    color: #bb2d3b !important;
+}
+
+.btn-icon-dark:hover i {
+    color: #1c1f23 !important;
+}
+
+/* Icon Button Hover Effects 2022-09-02 */
+
+.btn.btn-card:hover{
+    border-color: transparent;
+}
+
+.btn.btn-icon-primary:disabled{
+    border-color: transparent;
+}
+
+.btn.btn-icon-success:disabled{
+    border-color: transparent;
+}
+
+.btn.btn-icon-danger:disabled{
+    border-color: transparent;
+}
+
+.btn.btn-icon-secondary:disabled{
+    border-color: transparent;
+}
+
+.btn.btn-icon-dark:disabled{
+    border-color: transparent;
+}
+
+/* Color-boxed headings and bg classes | 2022-12-21 */
+
+.color-heading {
+    padding: 0.59375em 1.25em;
+    text-align: left;
+}
+
+.color-heading.text-start {
+    padding: 0.59375em 0.75em;
+    text-align: left;
+}
+
+.color-heading .text-button:hover {
+    color: #e0e0e0;
+}
+
+.color-box {
+    padding: 0.75em 1.25em;
+    text-align: left;
+    border-radius: 8px;
+    border-width: 4px;
+    border-style: solid;
+    border-color: inherit;
+}
+
+.screening-heading, .report-heading {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* might be removed: */
+
+.bg-configurations {
+    color: white;
+    background: #606070;
+}
+
+.bg-dashboard {
+    color: white;
+    background: #808080;
+}
+
+.bg-data {
+    color: white;
+    background: #609890;
+}
+
+.bg-maps {
+    color: white;
+    background: #90a060;
+}
+
+.bg-memberships {
+    color: white;
+    background: #906090;
+}
+
+.bg-projects {
+    color: white;
+    background: #a06060;
+}
+
+.bg-questionnaires {
+    color: white;
+    background: #c0a060;
+}
+
+.bg-scripts {
+    color: white;
+    background: #589870;
+}
+
+.bg-users {
+    color: white;
+    background: #5878a0;
+}
+
+.bg-user-groups {
+    color: white;
+    background: #6060a0;
+}
+
+/* Round icon buttons 2022-12-13 */
+
+.btn-back {
+    background-color: #808080 !important;
+    transition: transform .25s;
+}
+
+.btn-back:hover {
+    background-color: #848484 !important;
+    transform: scale(1.125);
+}
+
+.btn-configurations {
+    background-color: #606070 !important;
+    transition: transform .25s;
+}
+
+.btn-configurations:hover {
+    background-color: #646474 !important;
+    transform: scale(1.125);
+}
+
+.btn-data {
+    background-color: #609890 !important;
+    transition: transform .25s;
+}
+
+.btn-data:hover {
+    background-color: #509c94 !important;
+    transform: scale(1.125);
+}
+
+.btn-maps {
+    background-color: #90a060 !important;
+    transition: transform .25s;
+}
+
+.btn-maps:hover {
+    background-color: #94a450 !important;
+    transform: scale(1.125);
+}
+
+.btn-memberships {
+    background-color: #906090 !important;
+    transition: transform .25s;
+}
+
+.btn-memberships:hover {
+    background-color: #945094 !important;
+    transform: scale(1.125);
+}
+
+.btn-projects {
+    background-color: #a06060 !important;
+    transition: transform .25s;
+}
+
+.btn-projects:hover {
+    background-color: #a85050 !important;
+    transform: scale(1.125);
+}
+
+.btn-questionnaires {
+    background-color: #c0a060 !important;
+    transition: transform .25s;
+}
+
+.btn-questionnaires:hover {
+    background-color: #c4a450 !important;
+    transform: scale(1.125);
+}
+
+.btn-scripts {
+    background-color: #589870 !important;
+    transition: transform .25s;
+}
+
+.btn-scripts:hover {
+    background-color: #48a060 !important;
+    transform: scale(1.125);
+}
+
+.btn-users {
+    background-color: #5878a0 !important;
+    transition: transform .25s;
+}
+
+.btn-users:hover {
+    background-color: #5070a8 !important;
+    transform: scale(1.125);
+}
+
+.btn-user-groups {
+    background-color: #6060a0 !important;
+    transition: transform .25s;
+}
+
+.btn-user-groups:hover {
+    background-color: #5050a5 !important;
+    transform: scale(1.125);
+}
+
+/* Fake Buttons 2022-09-01 */
+
+.btn.btn-fake:hover {
+    cursor: default;
+}
+
+.btn:disabled {
+    border-color: transparent;
+}
+
+/* Custom breadcrumbs style */
+.breadcrumb-item a {
+    text-decoration: none !important;
+}
+
+.breadcrumb-item + .breadcrumb-item::before {
+    /* float: left; */
+    /* padding-right: 0.5rem; */
+    color: #6c757d;
+    content: var(--bs-breadcrumb-divider, ">") /* rtl: var(--bs-breadcrumb-divider, "<") */;
+}
+.breadcrumb-item.active {
+    color: #6c757d;
+}
+
+.breadcrumbs ol {
+    margin-bottom: 0 !important;
+}
+
+/* Custom tooltips style */
+.tooltip-inner {
+    max-width: 440px;
+    white-space: pre-wrap;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: rgb(51, 51, 51);
+    --bs-tooltip-opacity: 1.0;
+    --bs-tooltip-color: var(--bs-light);
+    --bs-tooltip-font-size: 1em;
+    --bs-tooltip-max-width: 30em;
+}
+
+.custom-tooltip-start > .tooltip-inner {
+    --bs-tooltip-padding-x: 1em;
+    --bs-tooltip-padding-y: 0.5em;
+    text-align: left !important;
+}
+
+/* Pointer style while hovering over draggable items */
+/* Still needs custom style while dragging */
+/*
+.sortable-item {
+    cursor: pointer;
+}
+*/
+
+.sortable-handle {
+    cursor: pointer;
+}
+
+.sortable-ghost {
+    opacity: .5;
+    background: #C8EBFB;
+}
+
+/*
+ * Utilities
+ */
+
+.form-floating > label { z-index: 5; }
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+/* end of dashboard */
+
+/* a grey box that questions can be placed in */
+.question-box {
+    border: 0.25pt solid #c0c0c0;
+    border-radius: 8px;
+    background: #f0f0f0;
+}
+
+/* Sortable lists | START */
+
+.questionnaire-content {
+    background-color: #f2f2f2;
+    /* border: 0.25pt solid black; */
+    /* border-radius: .125rem; */
+    padding: .75rem;
+}
+
+.questionnaire-content:hover {
+    background-color: #ededed;
+}
+
+.questionnaire-content .q-item {
+    background-color: #008080;
+    color: #f0f0f0;
+    border: 0.25pt dashed #b2b2b2;
+    border-radius: 1.25rem;
+    padding: .5rem 1rem;
+}
+
+.text-80 {
+    font-size: .8em;
+}
+
+.text-90 {
+    font-size: .9em;
+}
+
+.text-110 {
+    font-size: 1.1em;
+}
+
+.text-120 {
+    font-size: 1.2em;
+}
+
+/* Sortable lists | END */

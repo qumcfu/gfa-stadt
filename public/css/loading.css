@@ -1,0 +1,36 @@
+.page-load-wrapper {
+    width: 100%;
+    height: 5.5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fffd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.page-load {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    position: relative;
+    border: 3px solid #222;
+    border-radius: 5px;
+    animation: page-load 2.5s infinite ease;
+}
+.page-load-inner {
+    vertical-align: top;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: #f8f9fa;
+    border-radius: 5px;
+}
+
+@keyframes page-load {
+    0% { transform: rotate(0deg); left: -2%;}
+    25% { transform: rotate(180deg); left: 2%;}
+    50% { transform: rotate(180deg); left: 2%;}
+    75% { transform: rotate(-360deg); left: -2%;}
+    100% { transform: rotate(-360deg); left: -2%;}
+}
