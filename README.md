@@ -27,13 +27,13 @@ Required: php 8.2 or higher, npm, composer
 
 ## Contact
 
-Prof. Dr. Boris Tolg ([boris.tolg@haw-hamburg.de](mailto:boris.tolg@haw-hamburg.de)), HAW
-Prof. Dr. Joachim Westenhöfer ([joachim@westenhoefer.de](mailto:joachim@westenhoefer.de)), HAW
-Prof. Dr. Heidi Sinning ([sinning@fh-erfurt.de](mailto:sinning@fh-erfurt.de)), ISP
-Tammo Adami, HAW
-Christian Bojahr, ISP
-Arne Sibilis, HAW
-Prof. Dr. Johanna Buchcik, HAW
+- Prof. Dr. Boris Tolg ([boris.tolg@haw-hamburg.de](mailto:boris.tolg@haw-hamburg.de)), HAW
+- Prof. Dr. Joachim Westenhöfer ([joachim@westenhoefer.de](mailto:joachim@westenhoefer.de)), HAW
+- Prof. Dr. Heidi Sinning ([sinning@fh-erfurt.de](mailto:sinning@fh-erfurt.de)), ISP
+- Tammo Adami, HAW
+- Christian Bojahr, ISP
+- Arne Sibilis, HAW
+- Prof. Dr. Johanna Buchcik, HAW
 
 ## License
 
