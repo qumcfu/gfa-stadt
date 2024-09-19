@@ -2,8 +2,18 @@
 
 return [
 
-    'current' => '0.5.3 (26.07.2024)',
+    'current' => '1.0.0 (30.08.2024)',
     'history' => [
+        [
+            'version' => 'v1.0.0',
+            'release' => '30.08.2024',
+            'updates' => [
+                'Mehrere zentrale Seiten des Online-Tools wurden um <b>Einführungsvideos</b> ergänzt, in denen die Funktionen der Elemente auf der jeweiligen Seite erklärt werden.',
+                'Projektleitungen können nun <b>Dateien hochladen</b>, um den Teilnehmenden eines Vorhabens Informationen zur Verfügung zu stellen.',
+                'Sämtliche Fragen wurden mit einer eindeutigen Nummer (z.B. S1.1) versehen, um Bezüge zu erleichtern.',
+                'Das Glossar wurde erweitert und es wurden diverse Fehler korrigiert.'
+            ]
+        ],
         [
             'version' => 'v0.5.3',
             'release' => '26.07.2024',
